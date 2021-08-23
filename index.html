@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Reproductor de video con HTML5, CSS3 y Javascript</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="player">
+            
+            <div class="player-overlay">
+                <h2 class="player-title">Video de ejemplo</h2>
+                <div class="player-actions">
+                    <button class="button" id="backward" aria-label="Retroceder 10 segundos"></button>
+                    <button class="button" id="play" aria-label="Boton play" title="Boton de Play"></button>
+                    <button class="button" id="pause" aria-label="Boton de pause"></button>
+                    <button class="button" id="foward" aria-label="Avanzar 10 segundos"></button>
+                </div>
+           </div>
+            <div class="player-progress">
+            <input id="progress" type="range" min="0" value="0" step="1">
+            </div>
+        <video id="video" poster="./images/portada.jpg" src="https://media.w3.org/2010/05/sintel/trailer.mp4" width="400"></video>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
